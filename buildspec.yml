@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+  build:
+    commands:
+      - echo "Building the static website"
+      - echo "Build completed on `date`"
+artifacts:
+  files:
+    - '**/*'
+  base-directory: .
